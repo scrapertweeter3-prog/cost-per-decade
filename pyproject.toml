@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "costperdecade-cli"
+version = "1.0.0"
+description = "Buy-it-for-life math in the terminal: cost per decade, cost per use, break-even year and a durable-vs-cheap verdict"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "James Verlander"}]
+keywords = ["buy-it-for-life", "cost-per-decade", "bifl", "frugal", "cli", "personal-finance", "comparison"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://durablepicks.com/"
+"Source Code" = "https://github.com/scrapertweeter3-prog/cost-per-decade"
+"Bug Tracker" = "https://github.com/scrapertweeter3-prog/cost-per-decade/issues"
+
+[project.scripts]
+costperdecade = "costperdecade:main"
+
+[tool.setuptools]
+py-modules = ["costperdecade"]
